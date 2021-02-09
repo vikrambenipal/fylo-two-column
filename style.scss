@@ -2,6 +2,7 @@ $purple: #07043B;
 $blue: #2F65F8;
 $green: #3DA08F;
 $email-grey: #C2C2C2;
+$ea-bg: #575988;
 
 @font-face {
     font-family: 'open-sans-bold';
@@ -74,6 +75,7 @@ h1 {
             padding-left: 4%;
             margin-bottom: 15px;
             border: 1px solid $purple;
+            box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.1593);
         }
         button {
             width: 85%;
@@ -81,6 +83,7 @@ h1 {
             border: none;
             background-color: $blue;
             color: white;
+            box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.1593);
         }
         padding-bottom: 100px;
     }
@@ -120,4 +123,9 @@ h1 {
             align-items: center;
         }
     }
+}
+
+.early-access {
+    background-color: $ea-bg;
+
 }

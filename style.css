@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'open-sans-bold';
+  src: url(Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'open-sans-reg';
+  src: url(Open_Sans/OpenSans-Regular.ttf);
+}
+
+h1, h3 {
+  font-family: 'open-sans-bold';
+}
+
+p, h4, a {
+  font-family: 'open-sans-reg';
+}
+
 .sec-1, .sec-1 .form-content, .sec-2, .sec-2 .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,13 +41,59 @@ h1 {
   color: #07043B;
 }
 
+.nav .logo {
+  width: 80px;
+  height: 24px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
 .nav .nav-list li {
   display: inline;
+  padding-left: 30px;
 }
 
 .sec-1 .sec-1-content {
   text-align: center;
   margin: 0 auto;
+}
+
+.sec-1 .sec-1-content p {
+  margin: 0 auto;
+  color: #07043B;
+  line-height: 28px;
+  width: 85%;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.sec-1 .form-content {
+  border: none;
+  padding-bottom: 100px;
+}
+
+.sec-1 .form-content input {
+  width: 80%;
+  height: 40px;
+  padding-left: 4%;
+  margin-bottom: 15px;
+  border: 1px solid #07043B;
+}
+
+.sec-1 .form-content button {
+  width: 85%;
+  height: 40px;
+  border: none;
+  background-color: #2F65F8;
+  color: white;
+}
+
+.sec-1 .curve {
+  width: 100vw;
+}
+
+.sec-2 {
+  background-color: #F8F8FE;
 }
 
 .sec-2 .sec-2-content {
@@ -38,6 +102,7 @@ h1 {
 }
 
 .sec-2 .testimonial {
+  background-color: white;
   text-align: left;
   border: 1px solid black;
 }

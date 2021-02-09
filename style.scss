@@ -1,0 +1,60 @@
+$purple: #07043B;
+$blue: #2F65F8;
+$green: #3DA08F;
+$email-grey: #C2C2C2;
+
+%section-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+%image-sizing {
+    width: 70vw;
+    height: auto;
+}
+h1 {
+    color: $purple;
+}
+.nav {
+    .nav-list {
+        li {
+            display: inline;
+        }
+    }
+}
+.sec-1 {
+    @extend %section-flex;
+
+    .image-1 {
+        @extend %image-sizing;
+    }
+
+    .sec-1-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .form-content {
+        @extend %section-flex;
+    }
+}
+
+.sec-2 {
+    @extend %section-flex;
+
+    .image-2 {
+        @extend %image-sizing;
+    }
+
+    .sec-2-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .form-content {
+        @extend %section-flex;
+    }
+
+    .testimonial {
+        border: 1px solid black;
+    }
+}

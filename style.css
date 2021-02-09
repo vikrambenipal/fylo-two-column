@@ -1,0 +1,43 @@
+.sec-1, .sec-1 .form-content, .sec-2, .sec-2 .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-1 .image-1, .sec-2 .image-2 {
+  width: 70vw;
+  height: auto;
+}
+
+h1 {
+  color: #07043B;
+}
+
+.nav .nav-list li {
+  display: inline;
+}
+
+.sec-1 .sec-1-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sec-2 .sec-2-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sec-2 .testimonial {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

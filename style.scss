@@ -55,6 +55,14 @@ h1 {
     }
 
     .testimonial {
+        text-align: left;
         border: 1px solid black;
+
+        .profile {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+        }
     }
 }

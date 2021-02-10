@@ -259,5 +259,24 @@ h1 {
 footer {
   background-color: #07043B;
   color: white;
+  font-family: 'open-sans-reg';
+  font-size: 14px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  padding-bottom: 12px;
+}
+
+footer .logo {
+  fill: white !important;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

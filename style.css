@@ -12,11 +12,11 @@ h1, h3 {
   font-family: 'open-sans-bold';
 }
 
-p, h4, a {
+p, h4, h2, a {
   font-family: 'open-sans-reg';
 }
 
-.sec-1, .sec-1 .form-content, .sec-2 {
+.sec-1, .sec-1 .form-content, .sec-2, .early-access {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,13 +37,33 @@ p, h4, a {
   height: auto;
 }
 
-.sec-1 .sec-1-content p, .sec-2 .sec-2-content p {
+.sec-1 .sec-1-content p, .sec-2 .sec-2-content p, .early-access .ea-content p {
   margin: 0 auto;
   color: #07043B;
   line-height: 28px;
   width: 85%;
   padding-bottom: 30px;
   padding-top: 10px;
+}
+
+.sec-1 .form-content input, .early-access .form-content input {
+  width: 80%;
+  height: 40px;
+  padding-left: 4%;
+  margin-bottom: 15px;
+  border: 1px solid #07043B;
+  -webkit-box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
+          box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
+}
+
+.sec-1 .form-content button, .early-access .form-content button {
+  width: 85%;
+  height: 40px;
+  border: none;
+  background-color: #2F65F8;
+  color: white;
+  -webkit-box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
+          box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
 }
 
 h1 {
@@ -94,26 +114,6 @@ h1 {
 .sec-1 .form-content {
   border: none;
   padding-bottom: 100px;
-}
-
-.sec-1 .form-content input {
-  width: 80%;
-  height: 40px;
-  padding-left: 4%;
-  margin-bottom: 15px;
-  border: 1px solid #07043B;
-  -webkit-box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
-          box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
-}
-
-.sec-1 .form-content button {
-  width: 85%;
-  height: 40px;
-  border: none;
-  background-color: #2F65F8;
-  color: white;
-  -webkit-box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
-          box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.1593);
 }
 
 .sec-1 .curve {
@@ -176,13 +176,25 @@ h1 {
 .sec-2 .testimonial {
   background-color: white;
   text-align: left;
-  border: 1px solid black;
-  width: 80%;
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.0459);
+          box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.0459);
+  width: 400px;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 100px;
+  padding-top: 40px;
+}
+
+.sec-2 .testimonial p {
+  color: #07043B;
+}
+
+.sec-2 .testimonial img {
+  margin-left: 30px;
 }
 
 .sec-2 .testimonial .profile {
+  margin-top: -20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +216,48 @@ h1 {
   height: 40px;
 }
 
+.sec-2 .testimonial .profile .bio {
+  margin-left: 15px;
+  margin-top: -30px;
+}
+
+.sec-2 .testimonial .profile .bio h3 {
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+.sec-2 .testimonial .profile .bio h4 {
+  margin-top: -10px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
 .early-access {
   background-color: #575988;
+  margin-top: -25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.early-access .ea-content h2 {
+  color: white;
+}
+
+.early-access .ea-content p {
+  color: white;
+}
+
+.early-access .form-content {
+  width: 100vw;
+}
+
+.early-access .form-content input {
+  border: none;
+}
+
+footer {
+  background-color: #07043B;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@ $blue: #2F65F8;
 $green: #3DA08F;
 $email-grey: #C2C2C2;
 $ea-bg: #575988;
+$dark-purple: #07043B;
 
 @font-face {
     font-family: 'open-sans-bold';
@@ -15,7 +16,7 @@ $ea-bg: #575988;
 h1, h3 {
     font-family: 'open-sans-bold';
 }
-p, h4, a {
+p, h4, h2, a {
     font-family: 'open-sans-reg';
 }
 
@@ -36,6 +37,24 @@ p, h4, a {
     width: 85%;
     padding-bottom: 30px;
     padding-top: 10px;
+}
+
+%input-style {
+    width: 80%;
+    height: 40px;
+    padding-left: 4%;
+    margin-bottom: 15px;
+    border: 1px solid $purple;
+    box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.1593);
+}
+
+%button-style {
+    width: 85%;
+    height: 40px;
+    border: none;
+    background-color: $blue;
+    color: white;
+    box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.1593);
 }
 h1 {
     color: $purple;
@@ -84,20 +103,10 @@ h1 {
         @extend %section-flex;
         border: none;
         input {
-            width: 80%;
-            height: 40px;
-            padding-left: 4%;
-            margin-bottom: 15px;
-            border: 1px solid $purple;
-            box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.1593);
+            @extend %input-style;
         }
         button {
-            width: 85%;
-            height: 40px;
-            border: none;
-            background-color: $blue;
-            color: white;
-            box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.1593);
+            @extend %button-style;
         }
         padding-bottom: 100px;
     }
@@ -155,13 +164,21 @@ h1 {
     .testimonial {
         background-color: white;
         text-align: left;
-        border: 1px solid black;
-        width: 80%;
+        box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.0459);
+        width: 400px;
         height: auto;
         margin: 0 auto;
-
+        margin-bottom: 100px;
+        padding-top: 40px;
+        p {
+            color: $purple;
+        }
+        img {
+            margin-left: 30px;
+        }
         
         .profile {
+            margin-top: -20px;
             display: flex;
             flex-direction: row;
             justify-content: left;
@@ -171,11 +188,54 @@ h1 {
                 width: 40px;
                 height: 40px;
             }
+            .bio {
+                margin-left: 15px;
+                margin-top: -30px;
+                h3{
+                    margin-top: 45px;
+                    font-size: 16px;
+                }
+                h4{
+                    margin-top: -10px;
+                    font-size: 12px;
+                    letter-spacing: 0.3px;
+                }
+            }
         }
     }
 }
 
 .early-access {
     background-color: $ea-bg;
+    margin-top: -25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    @extend %section-flex;
+    .ea-content {
+        h2 {
+            color: white;
+        }
+        p {
+            @extend %p-style;
+            color: white;
+        }
+    }
 
+    .form-content{
+        width: 100vw;
+        input {
+            @extend %input-style;
+            border: none;
+        }
+        button {
+            @extend %button-style;
+        }
+    }
+    
+}
+
+footer {
+    background-color: $dark-purple;
+    color: white;
 }

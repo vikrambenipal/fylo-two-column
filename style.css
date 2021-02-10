@@ -177,6 +177,9 @@ h1 {
   background-color: white;
   text-align: left;
   border: 1px solid black;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .sec-2 .testimonial .profile {
@@ -193,6 +196,12 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.sec-2 .testimonial .profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .early-access {

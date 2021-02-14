@@ -321,4 +321,26 @@ footer {
             }
         }
     }
+
+    .sec-2{
+        flex-direction: row-reverse;
+        .sec-2-content {
+            margin-right: 30px;
+            text-align: left;
+            h1 {
+                font-size: 32px;
+            }
+            .testimonial, .link, p, h1 {
+                margin-left: 0;
+                margin-left: 10%;
+            }
+            .link {
+                width: 45%;
+            }
+        }
+        .image-2 {
+            width: 35vw;
+            margin-right: 5%;
+        }
+    }
 }

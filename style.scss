@@ -113,7 +113,7 @@ h1 {
 
     .curve {
         width: 100vw;
-
+        margin-bottom: -10px;
     }
 }
 
@@ -240,6 +240,7 @@ footer {
     color: white;
     font-family: 'open-sans-reg';
     font-size: 14px;
+    padding-bottom: 30px;
         
     .phone {
         display: flex;
@@ -274,5 +275,50 @@ footer {
         margin-bottom: 10px;
         margin-left: 35px;
         margin-top: 50px;
+    }
+}
+
+@media all and (min-width: 800px){
+    .sec-1{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2%;
+
+        h1, .form-content {
+            margin-left: 7.5%;
+        }
+        h1 {
+            width: 70%;
+        }
+        img {
+            margin-bottom: 100px;
+        }
+
+        .sec-1-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            text-align: left;
+        }
+
+        .image-1 {
+            width: 35vw;
+        }
+
+        .form-content {
+            flex-direction: row;
+            justify-content: left;
+            margin-right: 15px;
+            button {
+                max-width: 200px;
+            }
+            input {
+                max-width: 400px;
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
     }
 }

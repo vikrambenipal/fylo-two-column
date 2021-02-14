@@ -365,4 +365,10 @@ footer {
             }
         }
     }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 150px;
+    }
 }

@@ -240,6 +240,26 @@ footer {
     color: white;
     font-family: 'open-sans-reg';
     font-size: 14px;
+        
+    .phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        img {
+            padding-right: 10px;
+        }
+    }
+    .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        margin-top: -15px;
+        img {
+            padding-right: 10px;
+        }
+    }
 
     ul {
         list-style-type: none;

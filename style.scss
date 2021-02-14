@@ -325,7 +325,7 @@ footer {
     .sec-2{
         flex-direction: row-reverse;
         .sec-2-content {
-            margin-right: 30px;
+            margin-right: 60px;
             text-align: left;
             h1 {
                 font-size: 32px;
@@ -339,8 +339,30 @@ footer {
             }
         }
         .image-2 {
-            width: 35vw;
+            width: 40vw;
             margin-right: 5%;
+        }
+    }
+
+    .early-access {
+        flex-direction: row;
+        .ea-content {
+            text-align: left;
+            margin-top: 30px;
+            margin-right: 30px;
+            h2, p {
+                margin-left: 0;
+                margin-left: 10%;
+            }
+        }
+        .form-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 50vw;
+            button {
+                max-width: 200px;
+            }
         }
     }
 }
